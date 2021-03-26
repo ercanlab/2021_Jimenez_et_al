@@ -1,5 +1,8 @@
 #Script to show how to use the functions defined in the RNAseq_data_processing_script
 
+#Load ggplot2 for plotting
+library(ggplot2)
+
 #To test the usage of the script and to run the plots, use the sample file provided in the github to generate the plots seen in the figures as outlined below
 #Read in DESEQ output file & run the defined functions
 LS01emb<-read.table("~/Desktop/Data/RNAseq/newtrans/N2_LS01_emb/results/controlvstreatment.deseq.txt",header=T)
