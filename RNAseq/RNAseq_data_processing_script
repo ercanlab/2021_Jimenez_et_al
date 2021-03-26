@@ -23,8 +23,8 @@ getCelegansAnnotations <- function(file){
   return(c_elegans_annots)
 }
 
-c_elegans_annots <- getCelegansAnnotations("~/Desktop/Data/RNAseq/WS220_gene_annotations_WormMart_unique.xlsx")
-annot<-read.table("~/Desktop/Data/RNAseq/c.elegans.WS220.gene.wbid.chr.start.stop.txt",header=T)
+c_elegans_annots <- getCelegansAnnotations("WS220_gene_annotations_WormMart_unique.xlsx")
+annot<-read.table("c.elegans.WS220.gene.wbid.chr.start.stop.txt",header=T)
 tannot<-annot
 tannot$WBID<-as.character(tannot$WBID)
 tannot$chr<-as.character(tannot$chr)
