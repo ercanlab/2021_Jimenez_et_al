@@ -103,9 +103,6 @@ for(i in 1:length(loci$V1)){
 
 all_loci<-cbind(loci,sub_WT,sub_BR01,sub_LS05)
 
-#Load ggplot2 for plotting
-library(ggplot2)
-
 #Plot correlation plots for both insertions
 ggplot(all_loci,aes(x=sub_BR01,y=sub_LS05,color=group))+
   geom_point()+
