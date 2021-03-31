@@ -2,6 +2,9 @@
 #Files available on GEO GSE169250 https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE169250
 #Convert bigwig files to bedgraph prior to running files through this script
 
+#Load ggplot2 for plotting
+library(ggplot2)
+
 #Read in ChIP bedgraph files and corresponding peak bed files
 LS01_chip<-read.table("DPY-27_LS01_emb_avg_LAS06_LAS07_ratio.bdg")
 COP325_chip<-read.table("DPY-27_COP325_emb_ext120_ext122_avg_ratio.bdg")
