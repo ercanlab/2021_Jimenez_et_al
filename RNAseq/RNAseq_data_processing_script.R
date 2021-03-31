@@ -34,6 +34,7 @@ comp_annot<-rbind(c_elegans_annots,g1,g2)
 
 ## Function to append chromosome name to the dataset
 get.chr<-function(dataset){
+  chr.name<-""
   for(i in 1:length(dataset$wbid)){
     chr.name[i]<-comp_annot$Chr.Name[which(comp_annot$Gene.WB.ID==dataset$wbid[i])]
   }
