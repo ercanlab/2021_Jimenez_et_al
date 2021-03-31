@@ -2,6 +2,9 @@
 #Files available on GEO GSE169250 https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE169250
 #Convert bigwig files to bedgraph prior to running files through this script
 
+#Load ggplot2 for plotting
+library(ggplot2)
+
 #Read in ChIP bedgraph files
 #Read in rex site annotation file
 N2_chip<-read.table("DPY27_N2_emb_avg_CJ132_CJ39_SE172_ratio.bdg")
