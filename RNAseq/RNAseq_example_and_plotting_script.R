@@ -1,7 +1,9 @@
 #Script to show how to use the functions defined in the RNAseq_data_processing_script
 
-#Load ggplot2 for plotting
+#Load ggplot2 for plotting, and stringr and dplyr for data processing steps
 library(ggplot2)
+library('stringr')
+library(dplyr)
 
 #To test the usage of the script and to run the plots, use the sample file provided in the github to generate the plots seen in the figures as outlined below
 #Read in DESEQ output file & run the defined functions
